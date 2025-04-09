@@ -1,0 +1,67 @@
+.dashboard-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensure responsiveness */
+  justify-content: center;
+}
+
+.doughnut-container {
+  max-width: 400px; /* Maximum width for larger screens */
+  min-height: 400px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+.earning-container{
+  width: 100%;
+  max-width: 350px; /* Maximum width for larger screens */
+  min-height: 400px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+/* Larger screen styles */
+@media (min-width: 1024px) {
+  .earning-container {
+    min-width: 700px; /* Increase width for larger screens */
+  }
+}
+/* Dark mode styles */
+body.dark-mode .doughnut-container,
+body.dark-mode .earning-container {
+  background-color: #003366; /* Thick blue background for dark mode */
+  color: white; /* White text for dark mode */
+}
+
+.earning-container h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.earning-container p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.project-heading{
+  display: flex ;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}

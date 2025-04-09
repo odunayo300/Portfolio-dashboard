@@ -1,0 +1,52 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.avatar-navbar {
+    display: flex;
+    align-items: center; /* Vertically align the avatar */
+    justify-content: center; /* Center horizontally if needed */
+    height: 100%; /* Ensure it takes the full height of the navbar */
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.search-bar input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+.search-bar input:focus {
+    border-color: #007bff;
+}
+.dark-mode-toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.dark-mode-toggle:hover {
+    background-color: #e0e0e0;
+}
+
+body.dark-mode {
+    background-color: #001f3f;
+    color: #ffffff;
+}
+
+body.dark-mode .navbar {
+    background-color: #003366;
+    border-bottom: 1px solid #004080;
+}

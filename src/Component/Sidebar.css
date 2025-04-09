@@ -1,0 +1,66 @@
+/* Sidebar container */
+.sidebar {
+    position: fixed;
+    top: 60px;
+    left: -250px; /* Hidden by default */
+    width: 250px;
+    height: calc(100% - 60px); /* Full height minus navbar height */
+    background-color: #003366; /* Dark blue */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+
+  /* Open sidebar */
+.sidebar.open {
+    left: 0; /* Slide in */
+  }
+  
+  /* Avatar section */
+  .avatar-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  .job-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Sidebar links */
+  .sidebar-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  .sidebar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar-links a:hover {
+    background-color: #004080; /* Lighter blue on hover */
+  }
+  /* Responsive design */
+@media (min-width: 768px) {
+    .sidebar {
+      left: 0; /* Always visible on larger screens */
+    }
+  }
