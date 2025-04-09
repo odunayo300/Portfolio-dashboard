@@ -1,10 +1,11 @@
 import React from 'react';
-import { Charts } from 'chart.js/auto';
+import {Chart as ChartJS} from 'chart.js/auto';
 import { Doughnut, Line } from 'react-chartjs-2';
 import './DashboardComponent.css';
 import { Button,For, Stack, Table,Avatar,Progress,HStack} from '@chakra-ui/react';
 import { IoIosAdd } from "react-icons/io";
 
+console.log(ChartJS)
 const items = [
   { id: 1, name: "Steven Terry", Project: "Landing page", price:"$700" , Delivered: "2024-01-15", progress: 80 },
   { id: 2, name: "Audrey Jones", Project: "E-commerce", price: "$5000", Delivered: "2024-02-20", progress: 60 },
